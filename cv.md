@@ -1,6 +1,7 @@
 # Valeriy Li
----
+
 Front-end developer
+
 ---
 
 #### Contacts:
@@ -8,12 +9,14 @@ Front-end developer
 Mobile: +998 99 050-2099\
 E-mail: lee_hobb@rambler.ru\
 [LinkedIn](https://www.linkedin.com/in/zeexas)
+
 ---
 
 #### Summary:
 
 For more than 11 years in Finance I gained invaluable experience improving not only hard skills, but also soft skills working in teams and individually. At previous company I worked my way up from a financial manager to a head of Financial Department, but my love of using Excel functions led me here.\
 Hope my experience will help me in creating user-friendly products.
+
 ---
 
 #### Skills:
@@ -24,6 +27,7 @@ Hope my experience will help me in creating user-friendly products.
 * Git, Github
 * SQL
 * VS Code
+
 ---
 
 #### Code example:
@@ -61,6 +65,7 @@ function digPow(n, p){
 * [Bank Calculator](https://zeexas.github.io/Bank_Calculator/Calculator.html) (_Vanilla.js_, <https://github.com/Zeexas/Bank_Calculator>)
 * [15 Puzzle](https://zeexas.github.io/15_puzzle/index.html) (_Vue.js_, <https://github.com/Zeexas/15_puzzle>)
 * [Bulls and Cows](https://zeexas.github.io/Bulls_Cows/index.html) (_Vue.js_, <https://github.com/Zeexas/Bulls_Cows>)
+
 ---
 
 #### Education
@@ -69,6 +74,7 @@ Front-end Development Track, Data Analysis Track (_[Udacity](https://www.udacity
 Responsive Web Design (_[freeCodeCamp](https://www.freecodecamp.org/)_)\
 MBA, Accounting and Finance (_KIMEP University_, Almaty, Kazakhstan)\
 Bachelor in Economics (_Tashkent State University of Economics_, Tashkent, Uzbekistan)
+
 ---
 
 #### English
