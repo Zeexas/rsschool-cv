@@ -1,1 +1,0 @@
-https://zeexas.github.io/rsschool-cv/cv
