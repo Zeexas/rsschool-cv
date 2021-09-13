@@ -36,9 +36,10 @@ Hope my prior experience will help me in creating user-friendly products.
 Some numbers have funny properties. For example:
 > 89 --> 8¹ + 9² = 89 * 1\
 > 695 --> 6² + 9³ + 5⁴= 1390 = 695 * 2\
-> 46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+> 46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51\
+
 Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.\
-_In other words:_\
+    _In other words:_\
 Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k.\
 If it is the case we will return k, if not return -1.
 
@@ -61,10 +62,10 @@ function digPow(n, p){
 
 ### My projects
 
-* [L'Occitane in Uzbekistan](https://zeexas.github.io/Loccitane_uz/Loccitane_Uz.html) (_Vue.js_, _jQuery_, <https://github.com/Zeexas/Loccitane_uz>)
-* [Bank Calculator](https://zeexas.github.io/Bank_Calculator/Calculator.html) (_Vanilla.js_, <https://github.com/Zeexas/Bank_Calculator>)
-* [15 Puzzle](https://zeexas.github.io/15_puzzle/index.html) (_Vue.js_, <https://github.com/Zeexas/15_puzzle>)
-* [Bulls and Cows](https://zeexas.github.io/Bulls_Cows/index.html) (_Vue.js_, <https://github.com/Zeexas/Bulls_Cows>)
+* [L'Occitane in Uzbekistan](https://zeexas.github.io/Loccitane_uz/Loccitane_Uz.html) (_Vue.js_, _jQuery_, [source code](https://github.com/Zeexas/Loccitane_uz))
+* [Bank Calculator](https://zeexas.github.io/Bank_Calculator/Calculator.html) (_Vanilla.js_, [source code](https://github.com/Zeexas/Bank_Calculator))
+* [15 Puzzle](https://zeexas.github.io/15_puzzle/index.html) (_Vue.js_, [source code](https://github.com/Zeexas/15_puzzle))
+* [Bulls and Cows](https://zeexas.github.io/Bulls_Cows/index.html) (_Vue.js_, [source code](https://github.com/Zeexas/Bulls_Cows))
 
 ---
 
