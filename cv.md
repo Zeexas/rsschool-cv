@@ -6,8 +6,9 @@
 
 ### Contacts:
 
-Mobile: +998 99 050-2099\
-E-mail: lee_hobb@rambler.ru\
+**Mobile**: +998 99 050-2099\
+**E-mail**: lee_hobb@rambler.ru\
+**Telegram**: @zeeger\
 [LinkedIn](https://www.linkedin.com/in/zeexas)
 
 ---
