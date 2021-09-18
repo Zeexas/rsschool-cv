@@ -5,105 +5,144 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-  <div>
-    <h1>Valeriy Li</h1>
-    <h4>Front-end Developer</h4>
-  
-    <section>
-      <h3>Contacts:</h3>
-      <ul>
-        <li><b>Mobile:</b> +998 99 050-2099</li>
-        <li><b>E-mail:</b> lee_hobb@rambler.ru</li>
-        <li><b>Telegram:</b> @zeeger</li>
-        <li><a href="https://www.linkedin.com/in/zeexas" target="_blank">LinkedIn</a></li>
-      </ul>
-    </section>
-    <section>
-      <h3>Summary</h3>
-      <p>For more than 11 years in Finance I gained invaluable experience improving not only hard skills, 
-        but also soft skills working in teams and individually. At previous company I worked my way up 
-        from a financial manager to a head of Financial Department, but my love of using Excel functions led me here.<br>
-        Hope my prior experience will help me in creating user-friendly products.</p>
-    </section>
-    <section>
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML5, CSS3</li>
-        <li>JavaScript</li>
-        <li>Vue.js, jQuery</li>
-        <li>Git, GitHub</li>
-        <li>SQL</li>
-        <li>VS Code</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Code example</h3>
-      <p>
-        <b>Codewars Kata</b><br>
-        Some numbers have funny properties. For example:<br>
-        <span class="code-task">
-          89 --> 8¹ + 9² = 89 * 1<br>
-          695 --> 6² + 9³ + 5⁴= 1390 = 695 * 2<br>
-          46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51<br>
-        </span>
-        Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.<br>
-        <i>In other words:</i><br>
-        Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k?<br>
-        If it is the case we will return k, if not return -1.<br>
-        <i>Note: n and p will always be given as strictly positive integers.</i>
-      </p>
-      <pre>
-        <code>
-          <b>function</b> digPow(n, p){
-            <b>let</b> powSum = 0;
-            <b>for</b> (<b>let</b> i = 0; i &lt; n.toString().length; i++) {
-              powSum += (+n.toString()[i])**(p+i)
-            }
-            <b>if</b> (powSum % n === 0) {
-              <b>return</b> powSum / n;
-            } <b>else</b> {
-              <b>return</b> -1;
-            }
-          }
-        </code>
-      </pre>
-    </section>
-    <section>
-      <h3>Experience</h3>
-      <ul>
-        <li><a href="https://zeexas.github.io/Loccitane_uz/Loccitane_Uz.html" target="_blank">L’Occitane in Uzbekistan</a> 
-          (Vue.js, jQuery, <a href="https://github.com/Zeexas/Loccitane_uz" target="_blank">source code</a>)</li>
-        <li><a href="https://zeexas.github.io/Bank_Calculator/Calculator.html" target="_blank">Bank Calculator</a> 
-          (Vanilla.js, <a href="https://github.com/Zeexas/Bank_Calculator" target="_blank" >source code</a>)</li>
-        <li><a href="https://zeexas.github.io/15_puzzle/index.html" target="_blank">15 Puzzle</a> 
-          (Vue.js, <a href="https://github.com/Zeexas/15_puzzle" target="_blank">source code</a>)</li>
-        <li><a href="https://zeexas.github.io/Bulls_Cows/index.html" target="_blank">Bulls and Cows</a> 
-          (Vue.js, <a href="https://github.com/Zeexas/Bulls_Cows" target="_blank">source code</a>)</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Education</h3>
-      <ul>
-        <li>Front-end Development Track, Data Analysis Track (<a href="https://www.udacity.com/" target="_blank">Udacity</a>)</li>
-        <li>Responsive Web Design (<a href="https://www.freecodecamp.org/">freeCodeCamp</a>)</li>
-        <li>MBA, Accounting and Finance (KIMEP University, Almaty, Kazakhstan)</li>
-        <li>Bachelor in Economics (Tashkent State University of Economics, Tashkent, Uzbekistan)</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Languages</h3>
-      <ul>
-        <li>Russian - native</li>
-        <li>English - B2 (according to EPAM training center English test)</li>
-        <li>Korean - TOPIK I</li>
-        <li>Uzbek - elementary</li>
-      </ul>
-    </section>
+  <main>
+    <div class="right-container">
+      <header>
+        <h1>Valeriy Li</h1>
+        <h4>Front-end Developer</h4>
+      </header>
+    
+      <div class="right-content">
+        <section class="about">
+          <h3>About Me</h3>
+          <p>For more than 11 years in Finance I gained invaluable experience improving hard skills as well as 
+            soft skills working in teams and individually. At previous company I worked my way up 
+            from a financial manager to a head of Financial department, but my love of solving tasks using 
+            Excel functions led me to Development.<br>
+            Hope my prior experience will help me in creating user-friendly products.</p>
+        </section>
+        <section class="edu">
+          <h3>Education</h3>
+          <ul>
+            <li>Front-end Development Track, Data Analysis Track<br>
+              <a class="college" href="https://www.udacity.com/" target="_blank">Udacity</a></li>
+            <li>Responsive Web Design<br>
+              <a class="college" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+            <li>MBA, Accounting and Finance<br>
+              <span class="college">KIMEP University, Almaty, Kazakhstan</span></li>
+            <li>Bachelor in Economics<br>
+              <span class="college">Tashkent State University of Economics, Tashkent, Uzbekistan</span></li>
+          </ul>
+        </section>
+        <section class="projects">
+          <h3>Projects</h3>
+          <div class="project-icons">
+            <a href="https://zeexas.github.io/Loccitane_uz/Loccitane_Uz.html" target="_blank">
+              <img src="img/loccitane.png" alt="loccitane">
+            </a>
+            <a href="https://zeexas.github.io/Bank_Calculator/Calculator.html" target="_blank">
+              <img src="img/Calculator.png" alt="bank_calculator">
+            </a>
+            <a href="https://zeexas.github.io/15_puzzle/index.html" target="_blank">
+              <img src="img/15.png" alt="15_puzzle">
+            </a>
+            <a href="https://zeexas.github.io/Bulls_Cows/index.html" target="_blank">
+              <img src="img/Bulls_Cows.png" alt="Bulls and Cows game">
+            </a>
+          </div>
+          <ul>
+            <li>
+              L’Occitane in Uzbekistan (Vue.js, jQuery, <a href="https://github.com/Zeexas/Loccitane_uz" target="_blank">source code</a>)
+            </li>
+            <li>
+              Bank Calculator (Vanilla.js, <a href="https://github.com/Zeexas/Bank_Calculator" target="_blank" >source code</a>)
+            </li>
+            <li>
+              15 Puzzle (Vue.js, <a href="https://github.com/Zeexas/15_puzzle" target="_blank">source code</a>)
+            </li>
+            <li>
+              Bulls and Cows (Vue.js, <a href="https://github.com/Zeexas/Bulls_Cows" target="_blank">source code</a>)
+            </li>
+          </ul>
+        </section>
+        <section class="code">
+          <h3>Code example</h3>
+          <p>
+            Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p
+            find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.
+            <i>In other words:</i>
+            Is there an integer k such as: (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k?
+            If it is the case we will return k, if not return -1.<br>
+          </p>
+          <pre>
+            <code>
+              function digPow(n, p){
+                let powSum = 0;
+                for (let i = 0; i &lt; n.toString().length; i++) {
+                  powSum += (+n.toString()[i])**(p+i);
+                }
+                return (powSum % n === 0) ? powSum / n : -1;
+              }
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+    
+    <aside class="left-container">
+      <div class="foto-zone">
+        <img class="foto" src="img/cv-foto.jpg" alt="my-foto">
+      </div>
+      <div class="left-content">
+        <section class="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><img class="contact-icon" src="img/phone.svg" alt="phone icon"> +998 (99) 050-2099</li>
+            <li><img class="contact-icon" src="img/email.svg" alt="email icon"> lee_hobb@rambler.ru</li>
+            <li><img class="contact-icon" src="img/telegram.svg" alt="telegram icon"> @zeeger</li>
+            <li><img class="contact-icon" src="img/linkedin.svg" alt="linkedin icon"><a href="https://www.linkedin.com/in/zeexas" target="_blank">LinkedIn</a></li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML5, CSS3</li>
+            <li>JavaScript</li>
+            <li>Vue.js, jQuery</li>
+            <li>Git, GitHub</li>
+            <li>SQL</li>
+            <li>VS Code</li>
+          </ul>
+        </section>
+        <section class="languages">
+          <h3>Languages</h3>
+          <ul>
+            <li><b>Russian</b> - native</li>
+            <li><b>English</b> - B1-B2</li>
+            <li><b>Korean</b> - TOPIK I</li>
+            <li><b>Uzbek</b> - elementary</li>
+          </ul>
+        </section>
+      </div>
+    </aside>
     <footer>
-      
+      <a href="https://github.com/Zeexas" target="_blank">
+        <img class="github_icon" src="img/github.svg" alt="github-icon">
+      </a>
+      <b><time>2021</time></b>
+      <a href="https://rs.school/js/" target="_blank">
+        <img class="rsschool_icon" src="img/rs_school_js.svg" alt="rs_school_js-icon">
+      </a>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
