@@ -15,11 +15,10 @@ body {
 
 main {
   max-width: var(--width-main);
-  height: calc(var(--width-main) * 1.4142);
+  max-height: calc(var(--width-main) * 1.4142);
   margin: 2rem auto;
   display: flex;
   flex-flow: row-reverse nowrap;
-  /* font-family: sans-serif; */
   box-shadow: 0 0 10px 1px gray;
   position: relative;
 }
@@ -150,7 +149,7 @@ code {
 }
 
 .projects img {
-  width: 3rem;
+  width: 2.5rem;
   border: 2px solid var(--light-font);
 }
 
@@ -175,6 +174,7 @@ footer {
   flex-flow: row nowrap;
   align-items:center;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px -50px 35px -35px inset;
 }
 
 .github_icon {
