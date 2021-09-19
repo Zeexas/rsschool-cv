@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+  <main>
+    <div class="right-container">
+      <header>
+        <h1>Valeriy Li</h1>
+        <h4>Front-end Developer</h4>
+      </header>
+    
+      <div class="right-content">
+        <section class="about">
+          <h3>About Me</h3>
+          <p>For more than 11 years in Finance I gained invaluable experience improving hard skills as well as 
+            soft skills working in teams and individually. At previous company I worked my way up 
+            from a financial manager to a head of Financial department, but my <i>love of solving</i> tasks using 
+            <em>algorithms</em> and Excel functions led me to Development.<br>
+            Hope my prior experience will help me in creating user-friendly products.</p>
+        </section>
+        <section class="edu">
+          <h3>Education</h3>
+          <ul>
+            <li><b>Front-end</b> Development Track, <b>Data Analysis</b> Track<br>
+              <a class="college" href="https://www.udacity.com/" target="_blank">Udacity</a></li>
+            <li><b>Responsive</b> Web Design<br>
+              <a class="college" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+            <li><b>MBA</b>, Accounting and Finance<br>
+              <span class="college">KIMEP University, Almaty, Kazakhstan</span></li>
+            <li><b>Bachelor</b> in Economics<br>
+              <span class="college">Tashkent State University of Economics, Tashkent, Uzbekistan</span></li>
+          </ul>
+        </section>
+        <section class="projects">
+          <h3>Projects</h3>
+          <div class="project-icons">
+            <a href="https://zeexas.github.io/Loccitane_uz/Loccitane_Uz.html" target="_blank">
+              <img src="img/loccitane.png" alt="loccitane">
+            </a>
+            <a href="https://zeexas.github.io/Bank_Calculator/Calculator.html" target="_blank">
+              <img src="img/Calculator.png" alt="bank_calculator">
+            </a>
+            <a href="https://zeexas.github.io/15_puzzle/index.html" target="_blank">
+              <img src="img/15.png" alt="15_puzzle">
+            </a>
+            <a href="https://zeexas.github.io/Bulls_Cows/index.html" target="_blank">
+              <img src="img/Bulls_Cows.png" alt="Bulls and Cows game">
+            </a>
+          </div>
+          <ul>
+            <li>
+              <b>L’Occitane in Uzbekistan</b> / <i>Vue.js, jQuery</i>, <a href="https://github.com/Zeexas/Loccitane_uz" target="_blank">source code</a>
+            </li>
+            <li>
+              <b>Bank Calculator</b> / <i>Vanilla.js</i>, <a href="https://github.com/Zeexas/Bank_Calculator" target="_blank" >source code</a>
+            </li>
+            <li>
+              <b>15 Puzzle</b> / <i>Vue.js game</i>, <a href="https://github.com/Zeexas/15_puzzle" target="_blank">source code</a>
+            </li>
+            <li>
+              <b>Bulls and Cows</b> / <i>Vue.js game</i>, <a href="https://github.com/Zeexas/Bulls_Cows" target="_blank">source code</a>
+            </li>
+          </ul>
+        </section>
+        <section class="code">
+          <h3>Code example</h3>
+          <p>
+            Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p
+            find a positive integer k, such as the sum of the digits of n taken to the successive powers of p is equal to k * n.<br>
+            <i>In other words:</i>
+            Is there an integer k such as: (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k ?
+            If it is the case return k, if not return -1.<br>
+          </p>
+          <pre>
+            <code>
+              function digPow(n, p){
+                let powSum = 0;
+                for (let i = 0; i &lt; n.toString().length; i++) {
+                  powSum += (+n.toString()[i])**(p+i);
+                }
+                return (powSum % n === 0) ? powSum / n : -1;
+              }
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+    
+    <aside class="left-container">
+      <div class="foto-zone">
+        <img class="foto" src="img/cv-foto.jpg" alt="my-foto">
+      </div>
+      <div class="left-content">
+        <section class="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><img class="contact-icon" src="img/phone.svg" alt="phone icon"> +998 (99) 050-2099</li>
+            <li><img class="contact-icon" src="img/email.svg" alt="email icon"> lee_hobb@rambler.ru</li>
+            <li><img class="contact-icon" src="img/telegram.svg" alt="telegram icon"> @zeeger</li>
+            <li><img class="contact-icon" src="img/linkedin.svg" alt="linkedin icon"><a href="https://www.linkedin.com/in/zeexas" target="_blank">LinkedIn</a></li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML5, CSS3</li>
+            <li>JavaScript</li>
+            <li>Vue.js, jQuery</li>
+            <li>Git, GitHub</li>
+            <li>SQL</li>
+            <li>VS Code</li>
+          </ul>
+        </section>
+        <section class="languages">
+          <h3>Languages</h3>
+          <ul>
+            <li><b>English</b> - B1-B2</li>
+            <li><b>Russian</b> - native</li>
+            <li><b>Korean</b> - TOPIK I</li>
+            <li><b>Uzbek</b> - elementary</li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+    <footer>
+      <a href="https://github.com/Zeexas" target="_blank">
+        <img class="github_icon" src="img/github.svg" alt="github-icon">
+      </a>
+      <b><time>2021</time></b>
+      <a href="https://rs.school/js/" target="_blank">
+        <img class="rsschool_icon" src="img/rs_school_js.svg" alt="rs_school_js-icon">
+      </a>
+    </footer>
+  </main>
+</body>
+</html>
